@@ -1,14 +1,9 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.css'
-import './App.css'
 import Layout from './Component/Layout/Layout'
 // import Favorite from './Favorite/Favorite'
 import Homepage from './Containers/Homepage/Homepage'
 import SelectedCity from './Component/SelectedCity/SelectedCity'
-import axios from './axsios-orders'
-
-
+import axios from './axsios-orders';
 export default class App extends Component {
 
   state = {
@@ -18,8 +13,6 @@ export default class App extends Component {
     citysData: [],
   }
 
-
-  
   componentDidMount() {
     axios.get("https://adi-wather-app.firebaseio.com/allCitys/-Lr_25BIL0fiK8ink3li.json")
       .then(Response => {
@@ -85,5 +78,3 @@ export default class App extends Component {
     )
   }
 }
-  
-  

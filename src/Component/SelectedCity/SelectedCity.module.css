@@ -1,0 +1,23 @@
+.Button { 
+    margin: 6px 0;
+    box-sizing: border-box;
+    display: block;
+    width: 30%;
+    z-index: 10;
+    color: lightcoral;
+    border: none;
+
+}
+
+
+.Button1 { 
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    width: 30%;
+    z-index: 9;
+    color: lightcoral;
+    background-color:  none;
+    border: none;
+
+}
