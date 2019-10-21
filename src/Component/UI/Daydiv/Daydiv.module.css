@@ -1,56 +1,109 @@
 .Block { 
     width: 140px;
-    height: 160px;
+    height: 240px;
+    margin-top: 26px;
     border-radius: 8px;
-    padding: 20px 0 30px;
-    margin :10px;
     background-color: #5eb7b7;
     box-sizing: border-box;
-    align-items: center;
+    align-items: stretch;
+    align-content: center;
+    justify-content: space-between;
     flex-direction: row;
-    height: 200px;
-    background-color: #5eb7b7; 
+    padding: 10px;
+    float: left;
+    background-color: rgb(148, 150, 150); 
     background-image: linear-gradient(to bottom right, #329292c2, #00ffc8bd);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.19);}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(151, 151, 151, 0.19);
+    display: 'flex';
+
+}
 
 .Temp { 
     font-size: 22px;
+    margin-right: 40px;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
     box-sizing: border-box;
-    justify-content: space-between;
-    padding: 8px 0px 4px;
+    padding: 4px 0px 2px;
     color: #ffafb0;
+    z-index: 20px;
 }
-
-/* .City { 
-    font-size: 12px;
-    text-align: center;
-    
-} */
 
 .Date { 
     font-size: 14px;
+    margin-bottom :12px;
     text-align: center;
     box-sizing: border-box;
-    justify-content: space-between;
     font-style: italic;
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: rgb(223, 222, 222);
-
-
-
+    z-index: 21px;
 }
 
 .Detail{ 
     font-size: 14px;
+    margin-top : 12px;
     text-align: center;
     box-sizing: border-box;
-    justify-content: space-between;
     padding: 0px 10px 0px;
     font-family: 'Courier New', Courier, monospace;
-
+    z-index: 22px;
 }
 
+.Name{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(223, 222, 222);
+    margin-top : 6px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px 4px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 150px;
+}
+
+.Counntry{
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: rgb(223, 222, 222);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px 3px ;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 100px; 
+}
+
+
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+}
+
+.Button{
+    font-weight: 400;
+    text-decoration: none; 
+    margin-left: 58px;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    width: 100%;
+    text-decoration: none;
+    color: #ffafb0;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    outline-style: none;
+    border: none;
+    display: inline-block;
+    z-index: 500px;
+
+}
+*:focus {
+    outline: none;
+    box-shadow:none;
+  }

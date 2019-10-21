@@ -1,23 +1,94 @@
 .Button { 
-    margin: 6px 0;
+    margin: auto;
     box-sizing: border-box;
     display: block;
-    width: 30%;
-    z-index: 10;
-    color: lightcoral;
     border: none;
-
+    width: 100%;
+    text-decoration: none;
+    color: #ffafb0;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 20;
+    outline: none;
+    outline-style: none;
+    border: none;
+    display: inline-block;
 }
-
-
+*:focus {
+    outline: none;
+    box-shadow:none;
+  }
+  
 .Button1 { 
-    margin: 10px 0;
+    margin: initial;
     box-sizing: border-box;
     display: block;
-    width: 30%;
-    z-index: 9;
-    color: lightcoral;
-    background-color:  none;
     border: none;
-
+    width: 100%;
+    text-decoration: none;
+    color: #ffafb0;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 10;
+    outline: none;
+    outline-style: none;
+    border: none;
 }
+
+
+*:focus{
+    outline: none;
+    border: none; 
+}
+
+
+.Headr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #5eb7b7;
+    z-index: 10;
+}
+
+
+.Country{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    color: #5eb7b7;
+    z-index: 10;
+}
+
+.Tempc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #ffafb0;
+    z-index: 10;
+}
+
+.Weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 24px;
+    z-index: 10;
+}
+
+
+.Img{
+  margin-right: 100px;  
+}
+
+
+

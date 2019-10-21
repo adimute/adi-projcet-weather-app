@@ -4,7 +4,7 @@
   border-radius: 50%;
 }
 .Loader {
-  color: #521751;
+  color: #1e609e;
   font-size: 11px;
   text-indent: -99999em;
   margin: 55px auto;
@@ -36,7 +36,7 @@
 .Loader:after {
   width: 5.2em;
   height: 10.2em;
-  background: #fff;
+  background: rgb(219, 219, 219);
   border-radius: 0 10.2em 10.2em 0;
   top: -0.1em;
   left: 5.1em;

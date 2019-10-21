@@ -19,11 +19,11 @@ export default class Homepage extends Component {
             .then(Response => {
                 this.setState({
                     data: Response.data,
-                    maxTemp: ((Number(Response.data[0].Temperature.Maximum.Value) - 32) * 5 / 9).toFixed(0) + "°C",
+                    maxTemp: ((Number(Response.data[0].Temperature.Maximum.Value) - 32) * 5 / 9).toFixed(0) + "°c",
 
                 })
             }
-        )
+            )
     }
 
     render() {
@@ -52,37 +52,37 @@ export default class Homepage extends Component {
                 case 6:
                     dayAns = 'Sat'
                     break;
-                default: 
-                dayAns = ''
-                break
+                default:
+                    dayAns = ''
+                    break
             }
             const tempx = ((Number(day.Temperature.Maximum.Value) - 32) * 5 / 9).toFixed(0) + "°c";
-            return <Daydiv key = {i} date={dayAns} temp={tempx} detail={day.Day.IconPhrase}  />
+            return <Daydiv key={i} iconNum={day.Day.Icon} date={dayAns} temp={tempx} detail={day.Day.IconPhrase} />
         })
-        
+
+
         const titleStyle = {
-            display: 'flex', 
-            flexFlow: 'row', 
-            alignItems: 'center', 
-            justifyContent: 'center', 
+            display: 'flex',
+            flexFlow: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
             marginTop: '40px',
             color: '#5eb7b7',
             fontFamily: "'Courier New', Courier, monospace",
             fontWeight: 'bold'
-
         }
-        
+
+
         return (
             <div>
-                <Search citysName = {this.props.citysName}
-                 selectedCityHandler = {this.props.selectedCityHandler}
-                 citysData = {this.props.citysData}/>
-                <h1 style= {titleStyle}>Tal Aviv </h1>
-                <h3 style={{ display: 'flex', flexFlow: 'row', alignItems: 'center', justifyContent: 'center', marginTop: '2px',  color: '#ffafb0'}}>{this.state.maxTemp}</h3>
-                <div style={{ display: 'flex', flexFlow: 'row', alignItems: 'center', justifyContent: 'center', marginTop: '60px'}}>
+                <Search citysName={this.props.citysName}
+                    selectedCityHandler={this.props.selectedCityHandler}
+                    citysData={this.props.citysData} />
+                <h1 style={titleStyle}>Tal Aviv </h1>
+                <h3 style={{ display: 'flex', flexFlow: 'row', alignItems: 'center', justifyContent: 'center', marginTop: '2px', color: '#ffafb0' }}>{this.state.maxTemp}</h3>
+                <div style={{ display: 'flex', flexFlow: 'row', alignItems: 'center',  marginTop: '60px'}}>
                     {mapmap}
                 </div>
-                
             </div>
         )
     }
